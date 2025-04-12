@@ -3,6 +3,7 @@ require("config.remap")
 require("config.telescope")
 vim.cmd([[
 	set number
+    set relativenumber
 	imap jk <esc>
 	nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 	nnoremap <leader>sv :source $MYVIMRC<cr>
