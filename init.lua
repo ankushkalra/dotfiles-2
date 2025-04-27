@@ -1,4 +1,6 @@
 require("config.lazy")
+require("config.editor")
 require("config.remap")
 require("config.telescope")
-require("config.tokyonight")
+require("config.catppuccin")
+require("config.gitsigns")
