@@ -9,8 +9,8 @@ require("config.term")
 -- Lua
 vim.o.termguicolors = true -- Enable true color support
 
-local c = require('vscode.colors').get_colors()
-require('vscode').setup({
+local c = require("vscode.colors").get_colors()
+require("vscode").setup({
   -- Alternatively set style in setup
   -- style = 'light'
 
@@ -30,14 +30,13 @@ require('vscode').setup({
   terminal_colors = true,
 
   -- Override colors (see ./lua/vscode/colors.lua)
-  color_overrides = {
-  },
+  color_overrides = {},
 
   -- Override highlight groups (see ./lua/vscode/theme.lua)
   group_overrides = {
     -- this supports the same val table as vim.api.nvim_set_hl
     -- use colors from this colorscheme by requiring vscode.colors!
     Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
-  }
+  },
 })
 vim.cmd.colorscheme "vscode"

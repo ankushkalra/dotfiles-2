@@ -1,0 +1,4 @@
+indent_type = "Spaces"
+indent_width = 2 # Or your preferred number of spaces
+quote_style = "AutoPreferDouble"
+call_parentheses = "Input"
